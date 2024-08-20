@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio #2 de Ingeniería de Software Aplicada I</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #005bb5;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Estilos de las secciones */
+        section {
+            margin: 6rem auto 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #0073e6;
+            border-bottom: 2px solid #0073e6;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            margin-top: 2rem;
+            color: #005bb5;
+            font-size: 1.4rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 0.5rem 0;
+            }
+
+            section {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Laboratorio #2 de Ingeniería de Software Aplicada </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#obtencion-requerimientos">Obtención de Requerimientos</a></li>
+            <li><a href="#analisis-requerimientos">Análisis de los Requerimientos</a></li>
+            <li><a href="#diseno-software">Diseño del Software</a></li>
+            <li><a href="#desarrollo-software">Desarrollo del Software</a></li>
+            <li><a href="#pruebas-calidad">Pruebas y Calidad</a></li>
+            <li><a href="#despliegue">Despliegue</a></li>
+            <li><a href="#mantenimiento">Mantenimiento</a></li>
+        </ul>
+    </nav>
+
+    <section id="obtencion-requerimientos">
+        <h2>1. Obtención de Requerimientos</h2>
+        <p>En esta fase, el equipo de desarrollo trabaja estrechamente con el cliente para entender y documentar sus necesidades y expectativas. Es crucial para el éxito del proyecto que se capturen todos los requerimientos funcionales y no funcionales, que pueden incluir características específicas del software, restricciones de presupuesto, y limitaciones técnicas.</p>
+        <p>Las técnicas comunes utilizadas en esta fase incluyen entrevistas, cuestionarios, y análisis de documentos. Es fundamental para el equipo de desarrollo evitar malentendidos y asegurar que todos los requerimientos sean claros, específicos y alcanzables.</p>
+    </section>
+
+    <section id="analisis-requerimientos">
+        <h2>2. Análisis de los Requerimientos</h2>
+        <p>Después de la obtención de los requerimientos, se procede a analizarlos en detalle. Esta fase implica la identificación de posibles inconsistencias, ambigüedades o contradicciones en los requerimientos recopilados. Además, se evalúa la viabilidad técnica y se priorizan los requerimientos según su importancia y el impacto en el proyecto.</p>
+        <p>El análisis también puede incluir la creación de modelos conceptuales y prototipos iniciales para visualizar cómo el software debe comportarse. Esta fase es crucial para minimizar el riesgo de errores y asegurarse de que el equipo de desarrollo tenga una comprensión sólida de lo que se va a construir.</p>
+    </section>
+
+    <section id="diseno-software">
+        <h2>3. Diseño del Software</h2>
+        <p>En la fase de diseño, se define cómo funcionará el software en términos de arquitectura y componentes. Esto incluye la creación de diagramas de clases, diagramas de secuencia, y la definición de la arquitectura de base de datos. Se eligen las tecnologías que se utilizarán y se establecen los patrones de diseño que guiarán el desarrollo.</p>
+        <p>El objetivo es crear un plan detallado que los desarrolladores seguirán durante la fase de codificación. Un buen diseño debe ser modular, lo que facilita la prueba y el mantenimiento del software. Además, debe prever posibles cambios futuros, permitiendo una fácil adaptación del sistema a nuevas necesidades.</p>
+    </section>
+
+    <section id="desarrollo-software">
+        <h2>4. Desarrollo del Software</h2>
+        <p>La fase de desarrollo, también conocida como codificación, es donde el diseño se convierte en un producto tangible. Los desarrolladores escriben el código fuente utilizando los lenguajes de programación y herramientas seleccionadas en la fase de diseño. Este código se organiza en módulos o componentes según la arquitectura establecida.</p>
+        <p>Durante esta fase, es fundamental seguir buenas prácticas de programación, como la escritura de código limpio, la implementación de pruebas unitarias, y el uso de control de versiones. La comunicación entre los miembros del equipo es clave para asegurar que el desarrollo sea coherente y que todos los módulos funcionen bien juntos.</p>
+    </section>
+
+    <section id="pruebas-calidad">
+        <h2>5. Pruebas y Aseguramiento de la Calidad del Software</h2>
+        <p>Las pruebas son una parte esencial del desarrollo de software. En esta fase, se realizan pruebas para detectar errores y asegurar que el software cumple con los requerimientos especificados. Existen varios tipos de pruebas, como pruebas unitarias, pruebas de integración, y pruebas de aceptación por parte del usuario.</p>
+        <p>El aseguramiento de la calidad también incluye la revisión del código y la validación del cumplimiento de las normas de calidad establecidas. El objetivo final es garantizar que el producto entregado sea confiable, eficiente y esté libre de defectos críticos que puedan afectar su funcionamiento en producción.</p>
+    </section>
+
+    <section id="despliegue">
+        <h2>6. Despliegue o Puesta en Marcha</h2>
+        <p>El despliegue es el proceso de trasladar el software desde el entorno de desarrollo a un entorno de producción donde será utilizado por los usuarios finales. Esta fase puede incluir la configuración de servidores, la instalación del software, y la migración de datos desde sistemas anteriores.</p>
+        <p>Es esencial que el despliegue se realice de manera planificada y controlada para minimizar el riesgo de fallos. Además, el equipo de desarrollo debe estar preparado para responder rápidamente a cualquier problema que surja durante esta fase. En muchos casos, se implementa un plan de contingencia para asegurar que el sistema pueda ser restaurado a un estado funcional si algo sale mal.</p>
+    </section>
+
+    <section id="mantenimiento">
+        <h2>7. Mantenimiento de Software</h2>
+        <h3>7.1. Mantenimiento Correctivo</h3>
+        <p>El mantenimiento correctivo se refiere a las correcciones de errores que se descubren después de que el software ha sido desplegado. Estos errores pueden incluir fallos en el código, problemas de rendimiento, o fallos de seguridad. El objetivo es solucionar estos problemas lo más rápido posible para minimizar el impacto en los usuarios.</p>
+        <h3>7.2. Mantenimiento Preventivo</h3>
+        <p>El mantenimiento preventivo tiene como objetivo prevenir problemas futuros realizando ajustes y mejoras en el software antes de que surjan fallos. Esto puede incluir la optimización del código, la actualización de bibliotecas, o la mejora de la documentación.</p>
+        <h3>7.3. Mantenimiento Adaptativo</h3>
+        <p>El mantenimiento adaptativo es el proceso de modificar el software para que siga siendo útil a medida que cambian los requisitos del entorno en el que opera. Esto puede implicar la adaptación del software a nuevos sistemas operativos, plataformas de hardware, o cambios en las regulaciones legales.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 - Proyecto de Ingeniería de Software</p>
+    </footer>
+
+</body>
+</html>
